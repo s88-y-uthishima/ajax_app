@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     redirect_to action: :index
   end
 
-  def clicked
+  def checked
     post = Post.find(params[:id])
     if post.checked
       post.update(checked: false)
